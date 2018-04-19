@@ -14,7 +14,7 @@ class Location(models.Model):
     address_1 = models.CharField(max_length=200, blank=False)
     address_2 = models.CharField(max_length=200, blank=True, default='')
     city = models.CharField(max_length=30, blank=False)
-    state = models.CharField(max_length=2, blank=True, default='CA')
+    state = models.CharField(max_length=2, blank=True, default='PA')
     zipcode = models.CharField(max_length=5, blank=False)
     phone = models.CharField(max_length=20, blank=True)
     latitude = models.DecimalField(max_digits=9, decimal_places=6)
@@ -26,6 +26,9 @@ class Location(models.Model):
 
     class Meta:
         ordering = ('created', )
+
+    def __str__(self): 
+        return self.name
 
 
 class Hour(models.Model):

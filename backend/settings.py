@@ -90,15 +90,15 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'la_food_oasis',
-        'USER': 'la_food_oasis_user',
+        'NAME': 'phl_neargreen',
+        'USER': 'phl_neargreen_user',
         # 'PASSWORD': os.environ['DB_PASSWORD'],
         'PASSWORD': '',
         'PORT': '',
         'HOST': 'localhost',
         'TEST': {
-            'NAME': 'la_food_oasis_test',
-            'USER': 'la_food_oasis_user'
+            'NAME': 'phl_neargreen_test',
+            'USER': 'phl_neargreen_user'
         }
     }
 }

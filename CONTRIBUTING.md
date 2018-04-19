@@ -3,10 +3,10 @@
 ## Clone The Repo
 
 Open a terminal and go to where you want to keep the project on your local machine.
-Type `git clone https://github.com/foodoasisla/backend.git`
+Type `git clone https://github.com/neargreenphilly/backend.git`
 
 ## Python Version - Mac
-Food Oasis LA runs on Python 3. Your Mac ships with Python 2.7. Some good instructions for installing Python 3 can be found [here](http://docs.python-guide.org/en/latest/starting/install3/osx/)
+NearGreen runs on Python 3. Your Mac ships with Python 2.7. Some good instructions for installing Python 3 can be found [here](http://docs.python-guide.org/en/latest/starting/install3/osx/)
 
 ## Virtualenvwrapper - Mac
 
@@ -45,10 +45,10 @@ If you get an error saying `psql: FATAL:  database "<user>" does not exist` do t
     psql -h localhost
 
 Create a user
-    `CREATE USER la_food_oasis_user;`
+    `CREATE USER neargreen_phl_user;`
 
 Create a database
-    `CREATE DATABASE la_food_oasis OWNER la_food_oasis_user;`
+    `CREATE DATABASE neargreen_phl OWNER neargreen_phl_user;`
 
 Exit out of Postgres `\q`
 
@@ -65,15 +65,15 @@ In the command line, test Postgres `psql --version`.
 Get into postgres through the superuser account 'postgres' `psql -U postgres` and enter the password you set up on the install.
 
 Create a user
-    `CREATE USER la_food_oasis_user with password '[create password]';`
+    `CREATE USER neargreen_phl_user with password '[create password]';`
 
 Create a database
-    `CREATE DATABASE la_food_oasis OWNER la_food_oasis_user;`
+    `CREATE DATABASE neargreen_phl OWNER neargreen_phl_user;`
 
 Exit out of Postgres `\q`
 
-(To enter postgres as la_food_oasis_user you must enter the db name in addition to the username: </br>
-`psql -U la_food_oasis_user la_food_oasis`)
+(To enter postgres as neargreen_phl_user you must enter the db name in addition to the username: </br>
+`psql -U neargreen_phl_user neargreen_phl`)
 
 ## Install Dependencies - Mac
 
@@ -96,7 +96,7 @@ Go to settings.py in the backend folder and go to line 95, where it says PASSWOR
 
 `(myvenv)~/backend python manage.py migrate`
 
-## Populating data
+## Populating data (TODO: Replace with Philadelphia data)
 
 A sample dataset is located in backend/csv_files/
 

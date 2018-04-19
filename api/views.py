@@ -44,22 +44,22 @@ class LocationDetail(generics.RetrieveUpdateDestroyAPIView):
 
 class CommunityGardenLocationList(generics.ListCreateAPIView):
     serializer_class = LocationSerializer
-    queryset = Location.objects.filter(category='Community Garden')
+    queryset = Location.objects.filter(category='CG')
 
 
 class GroceryStoreLocationList(generics.ListCreateAPIView):
     serializer_class = LocationSerializer
-    queryset = Location.objects.filter(category='Grocery Store')
+    queryset = Location.objects.filter(category='GS')
 
 
 class FoodPantryLocationList(generics.ListCreateAPIView):
     serializer_class = LocationSerializer
-    queryset = Location.objects.filter(category='Food Pantry')
+    queryset = Location.objects.filter(category='FP')
 
 
 class SuperMarketLocationList(generics.ListCreateAPIView):
     serializer_class = LocationSerializer
-    queryset = Location.objects.filter(category='Super Market')
+    queryset = Location.objects.filter(category='SM')
 
 
 class HourList(generics.ListCreateAPIView):
